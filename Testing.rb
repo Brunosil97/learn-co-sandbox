@@ -22,7 +22,7 @@ def funniest(ftas)
   end
 end 
 
-p funniest
+
 
 #Test 2: Finding lowest and highest value 
 
