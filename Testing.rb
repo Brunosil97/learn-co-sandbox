@@ -14,7 +14,7 @@ end
 
 ftas = ["bruno", "luis", "cem", "bot"]
 
-def funniest(ftas, )
+def funniest(ftas)
   ftas.length.times do |count|
     if ftas[count] == funny 
       return count 
