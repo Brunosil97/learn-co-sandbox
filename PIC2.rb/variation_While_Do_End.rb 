@@ -1,0 +1,52 @@
+#Goals:
+#Use integer's .times method to execute a loop n-times
+#use loop to create an infinite loop
+#use 'until' to repeat
+
+#It's very common to want to repeat a bit of code some number of times (typically written as n) . We can use a while...do...end for this purpose. Let's run some code three times:
+
+#n = 2 
+#count = 0 
+#while count <= n do 
+  #puts "I ran."
+ # count = count + 1 
+#end
+
+ #We set count to 0 and count up to or rqual to N. Basically do something 3 times. Ruby agrees and lets us say: 
+ 
+ #3.times do # .times refers to how many times to print
+   #puts "I ran."
+ #end
+ 
+ #Use loop to create an infinite loop:
+ #sometimes we want to create an infinite loop that we want to break rescue_from
+ 
+ count = 0
+ n = 3
+ loop do #using loop 
+   break if count >= n 
+   puts "I ran"
+   count += 1 
+ end
+ 
+ #can be done with while,do,end: 
+ 
+ count = 0 
+ n = 3 
+ while true do # as long as it is true, continue
+   break if count >= n 
+   puts "I ran!"
+   count += 1 
+ end
+ 
+ #Programmers say 'loop' is more expressive of an intention to run infinitely and break on a condition.
+ 
+ #Use 'until' to repeat:
+ #A while executes the block of code while the conditional expression is true.
+ #An 'until' will execute a block until a specific condition is true. In other words, the block of code following 'until' will execute while the condition is false. 
+ 
+ counter = 0 #starts at 0
+ until counter == 20 # since its not equal to 20 it will continue to do so until it is equal
+ puts "The current number is less than 20."
+ counter += 1 
+ end
